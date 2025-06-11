@@ -1,4 +1,3 @@
-import React from 'react';
 import UploadFoto from './components/UploadFoto';
 
 function App() {
@@ -9,5 +8,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
