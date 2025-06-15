@@ -1,11 +1,20 @@
-import UploadFoto from './components/UploadFoto';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import ReportarMascota from './components/ReportarMascota';
+import VerReportes from './components/VerReportes';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Reportar Mascota</h1>
-      <UploadFoto />
-    </div>
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Reportar Mascota</Link> |{' '}
+        <Link to="/reportes">Ver Reportes</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<ReportarMascota />} />
+        <Route path="/reportes" element={<VerReportes />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
