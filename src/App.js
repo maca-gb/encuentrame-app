@@ -1,3 +1,5 @@
+// Este comentario fuerza un nuevo deploy en Vercel 🚀
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ReportarMascota from './components/ReportarMascota';
 import VerReportes from './components/VerReportes';
@@ -19,3 +21,4 @@ function App() {
 }
 
 export default App;
+
